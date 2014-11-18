@@ -1,0 +1,32 @@
+## Macro title: Keyboard Input
+## Macro has a body: N
+## Body processing: Convert wiki markup to HTML
+## Output: HTML
+##
+## Developed by: Wany
+## Date created: 2014/11/18
+## Installed by: 
+## This makes the body text look like a keyboard input.
+## @param inputtext:title=keyboard input text|type=string|required=true
+<style type="text/css" media="screen">
+    .kbdBox {
+        padding: 0.1em 0.6em;
+        border: 1px solid #ccc;
+        font-size: 11px;
+        font-family: Arial,Helvetica,sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+        -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+        -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+        box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        display: inline-block;
+        margin: 0 0.1em;
+        text-shadow: 0 1px 0 #fff;
+        line-height: 1.4;
+        white-space: nowrap;
+    }
+</style>
+<span class="kbdBox">$paraminputtext</span>
