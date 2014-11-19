@@ -8,6 +8,7 @@
 ## Installed by: 
 ## This makes the body text look like a keyboard input.
 ## @param inputtext:title=keyboard input text|type=string|required=true
+## @param textcolor:title=text color|type=enum|enumValues=aqua,black,blue,fuchsia,gray,green,lime,maroon,navy,olive,orange,purple,red,silver,teal,white,yellow|required=false
 <style type="text/css" media="screen">
     .kbdBox {
         padding: 0.1em 0.6em;
@@ -29,4 +30,4 @@
         white-space: nowrap;
     }
 </style>
-<span class="kbdBox">$paraminputtext</span>
+<font color="$paramtextcolor"><span class="kbdBox">$paraminputtext</span></font>
